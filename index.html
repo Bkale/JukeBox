@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <div class="fav">
+    <div class="playlist js-playlist">
       <h1>Favorites</h1>
     </div>
-    <div class="content">
-      <div class="query">
-        <input type="text" name="" placeholder="Search Artist" class="js-searchBar" value="">
-        <button type="button" name="button" class="js-submit">Search</button>
-      </div>
-      <h1>SPOTIFY</h1>
+    <div class="query">
+      <input type="text" name="" placeholder="Search Artist" class="js-searchBar" value="">
+      <button type="button" name="button" class="js-submit">Search</button>
+    </div>
+    <div class="content js-content">
     </div>
 
 
-  <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>

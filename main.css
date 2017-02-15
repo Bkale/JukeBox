@@ -1,18 +1,21 @@
 body{
   margin: auto 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-body .fav{
-  width: 20%;
-  height: 100vh;
+body .playlist{
+  height: 20vh;
   border: 1px solid black;
+  display: none
 }
 
 body .content{
-  width: 80%;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 body .content .query{
@@ -20,4 +23,15 @@ body .content .query{
   flex-direction: row;
   width: 50%;
   justify-content: flex-end;
+}
+
+
+.content .card{
+  height: 40%;
+  width: 19%;
+}
+
+.content .card .artwork{
+  width: 100%;
+  height: 80%
 }
