@@ -38,6 +38,8 @@
       .then((artistId) => { // GET TOPS SONGS
         artistID = artistId.artists.items[0]
         return  SpotifyAPI.getTopSongs(artistId.artists.items[0].id)
+        inputField.removeAttribute('disabled');
+        submit.removeAttribute('disabled');
       })
       .then((topSongs) =>{ // RENDER TOPS SONGS AND GET RELATED ARTIST
         renderTopSongs(topSongs);
@@ -45,8 +47,6 @@
       })
       .then((relatedArtists)=>{// RENDER ARTIST INFORMATION(IMAGE,NAME,RELATEDARTIST)
         renderArtistInfo(artistID,relatedArtists)
-        inputField.removeAttribute('disabled');
-        submit.removeAttribute('disabled');
       })
       .catch((error) => {
         throw new Error(error);
