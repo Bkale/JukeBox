@@ -1,37 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 body{
   margin: auto 0;
   display: flex;
-  flex-direction: column;
-}
-body .playlist{
-  height: 20vh;
-  border: 1px solid black;
-  display: none
+  flex-direction: row;
 }
 
-body .content{
-  height: 80vh;
-  text-align: center;
+.playlist{
+  width: 25%;
+  height: 100vh;
+  border: 1px solid;
+  background-color: #510B1C;
+  overflow: auto;
+}
+.playlist .ui,.card{
+  height: 15%;
+  width: 100%
+}
+.playlist-track {
+	display: flex;
+	position: relative;
+}
+
+.playlist-content {
+	width: 80%;
+	color: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.playlist-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	color: black;
+}
+
+
+.container{
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #071108
+}
+
+
+.container .query{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+}
+  .container .query input{
+    margin-right: 3%
+  }
+
+.container .content{
+  height: 85vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+
+.container .content .portrait{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .content .portrait h1{
+  color: white
+}
+.container .content .portrait img{
+  width: 90%;
+  height: 55%
+}
+.container .content .portrait .relatedArtistContainer{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column
+}
+
+.container .content .portrait .relatedArtistContainer h2{
+  margin-left: 10%;
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+.container .content .portrait .relatedArtistContainer .circleContainer{
+  height: 90%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
-body .content .query{
+
+.container .content .portrait .relatedArtistContainer .circleContainer .relatedArtistCirle{
+  height: 75%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: #EAAE00;
+  font-family: 'Lobster', cursive;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container .content .portrait .relatedArtistContainer .circleContainer .relatedArtistCirle:hover{
+  background-color: #F2B500;
+}
+
+.container .content .topSongs{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around
+}
+
+.container .content .topSongs .title{
+  text-align: center;
+}
+
+.container .content .topSongs section{
   display: flex;
   flex-direction: row;
-  width: 50%;
-  justify-content: flex-end;
+  width: 80%;
 }
 
-
-.content .card{
-  height: 40%;
-  width: 19%;
+.container .content .topSongs h1{
+  margin: 0;
+  width: 70%;
+  font-family: 'Lobster', cursive;
+  color: white
 }
 
-.content .card .artwork{
-  width: 100%;
-  height: 80%
+.container .content .topSongs .ui{
+  background-color: #EAAE00;
+  height: 38px
+}
+.container .content .topSongs .ui:hover{
+  background-color: #F2B500;
+}
+.container .content .circle{
+  height: 34px;
+  width: 36px;
+  background-color: black;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.container .content .circle .icon{
+  padding: 25% 0 0 25%;
+  color:white;
+  height: 40px
+}
+.container .content button{
+  height: 10%;
+  margin-left: 10%
 }

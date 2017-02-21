@@ -2,23 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Spotify JukeBox</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="playlist js-playlist">
-      <h1>Favorites</h1>
-    </div>
-    <div class="query">
-      <input type="text" name="" placeholder="Search Artist" class="js-searchBar" value="">
-      <button type="button" name="button" class="js-submit">Search</button>
-    </div>
-    <div class="content js-content">
+    <!-- For Favorites -->
+    <div class="playlist js-playlist"></div>
+
+    <!--  container-->
+    <div class="container">
+      <!-- Search Box -->
+      <div class="query">
+        <div class="ui input">
+          <input type="text" class="js-searchword" placeholder="Search...">
+          <button class="ui yellow button js-submit">Submit</button>
+        </div>
+      </div>
+      <!--  Content Page-->
+      <div class="content js-content">
+        <div class="portrait js-portrait"></div>
+        <div class="topSongs js-topSongs">
+        </div>
+
+      </div>
     </div>
 
 
-    <script type="text/javascript" src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
-    <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./javascript/index.js"></script>
+  <script type="text/javascript" src="./javascript/playlist.js" ></script>
+  <script type="text/javascript" src="./javascript/spotify.js" ></script>
   </body>
 </html>
