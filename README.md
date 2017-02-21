@@ -2,7 +2,7 @@
  Simple Jukebox utilizing the ```Spotify Api```
 
 <p align="center">
-  <img src="./assets/app.png" width="350"/>
+  <img src="./assets/app.png" width="700"/>
 </p>
 
 ##Running the example
