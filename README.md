@@ -1,7 +1,10 @@
 # SPOTIFY JUKEBOX #
  Simple Jukebox utilizing the ```Spotify Api```
 
-![alt tag]('./assets/app.png')
+<p align="center">
+  <img src="./assets/app.png" width="350"/>
+</p>
+
 ##Running the example
 
 ###Simply clone the repository and have fun.###
